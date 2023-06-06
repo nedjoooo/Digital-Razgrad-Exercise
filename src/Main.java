@@ -29,10 +29,6 @@ public class Main {
         generateStudentGrades(eightB, eightBStudents, "8B");
         generateStudentGrades(nineA, nineAStudents, "9A");
         generateStudentGrades(nineB, nineBStudents, "9B");
-//        try (BufferedWriter bf = new BufferedWriter(new FileWriter("students-list.csv"))) {
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
     }
 
     public static void generateStudentGrades(String[] students, int studentsCount, String className) {
@@ -80,9 +76,9 @@ public class Main {
 
     public static int randomNumber(int min, int max) {
         Random rand = new Random();
-        int randomNum = rand.nextInt((max - min) + 1) + min;
 
-        return randomNum;
+        int random = rand.nextInt((max - min) + 1) + min;
+        return random;
     }
 
     public static void distributeStudents() throws FileNotFoundException {
